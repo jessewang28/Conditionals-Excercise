@@ -19,14 +19,24 @@ public class Main {
         { return false; }
     }
 
-    public isLater()
+    public static boolean isLater(int month1, int day1, int year1, int month2, int day2, int year2)
     {
-        
+        if (year1>year2)
+        { return true; }
+        else if (month1>month2)
+        { return true;}
+        else if (day1>day2)
+        { return true;}
+        else
+        { return false; }
     }
-    public bestMatch()
+
+    public static bestMatch()
     {}
-    public findBestFit()
-    { }
+    public static findBestFit()
+    {}
+
+
     public static void main(String[] args) {
 	// write your code here
     }

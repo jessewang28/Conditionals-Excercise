@@ -27,23 +27,25 @@ public class run {
             1,3,2010));
         System.out.println(&quot;1/2/2010 is later than 1/2/2010 &quot; + isLater(1,2,2010,
             1,2,2010));
-// Best match
-        System.out.println(&quot;Best match 2 3 4 &quot; + bestMatch(2,3,4));
-        System.out.println(&quot;Best match 4 3 3 &quot; + bestMatch(4,3,3));
-        System.out.println(&quot;Best match 3 8 4 &quot; + bestMatch(3,8,4));
-        System.out.println(&quot;Best match 4 3 4 &quot; + bestMatch(4,3,4));
-        System.out.println(&quot;Best match 2 4 4 &quot; + bestMatch(2,4,4));
-        System.out.println(&quot;Best match 8 8 4 &quot; + bestMatch(8,8,4));
+//// Best match
+//        System.out.println(&quot;Best match 2 3 4 &quot; + bestMatch(2,3,4));
+//        System.out.println(&quot;Best match 4 3 3 &quot; + bestMatch(4,3,3));
+//        System.out.println(&quot;Best match 3 8 4 &quot; + bestMatch(3,8,4));
+//        System.out.println(&quot;Best match 4 3 4 &quot; + bestMatch(4,3,4));
+//        System.out.println(&quot;Best match 2 4 4 &quot; + bestMatch(2,4,4));
+//        System.out.println(&quot;Best match 8 8 4 &quot; + bestMatch(8,8,4));
+//
+//        System.out.println(&quot;Best match 4 4 4 &quot; + bestMatch(4,4,4));
+//// Best Fit
+//        System.out.println(&quot;Find Best fit 2 3 6 is &quot; + findBestFit(2,3,6));
+//        System.out.println(&quot;Find Best fit 4 3 6 is &quot; + findBestFit(4,3,6));
+//        System.out.println(&quot;Find Best fit 3 4 6 is &quot; + findBestFit(3,4,6));
+//        System.out.println(&quot;Find Best fit 2 3 1 is &quot; + findBestFit(2,3,1));
+//        System.out.println(&quot;Find Best fit 6 3 4 is &quot; + findBestFit(6,3,4));
+//        System.out.println(&quot;Find Best fit 3 6 4 is &quot; + findBestFit(3,6,4));
+//    }
 
-        System.out.println(&quot;Best match 4 4 4 &quot; + bestMatch(4,4,4));
-// Best Fit
-        System.out.println(&quot;Find Best fit 2 3 6 is &quot; + findBestFit(2,3,6));
-        System.out.println(&quot;Find Best fit 4 3 6 is &quot; + findBestFit(4,3,6));
-        System.out.println(&quot;Find Best fit 3 4 6 is &quot; + findBestFit(3,4,6));
-        System.out.println(&quot;Find Best fit 2 3 1 is &quot; + findBestFit(2,3,1));
-        System.out.println(&quot;Find Best fit 6 3 4 is &quot; + findBestFit(6,3,4));
-        System.out.println(&quot;Find Best fit 3 6 4 is &quot; + findBestFit(3,6,4));
+        public static void main(String[] args) {
+        main();
     }
-
-
 }
