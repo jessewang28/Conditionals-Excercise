@@ -57,12 +57,13 @@ public class Main {
     {
         int x;
         if (size1+size2<=space)
-        {int x = 3;}
-        else if (size1+size2>=space && size1>size2 && size2<space)
-        {int x = 1;}
-        else if (size1+size2>=space && size2>size1)
-        {int x = 2}
-        if (size1>space || size2>space)
+        {x = 3;}
+        else if (size1>size2 && size1<space || size2>space && size1<space || size1==size2 )
+        {x = 1;}
+        else if (size2>size1 && size2<space || size2<space && size1>space)
+        {x = 2;}
+        else
+        {x = 0;}
         return x;
     }
 
@@ -106,13 +107,15 @@ public class Main {
         System.out.println("Best match 4 4 4 " + bestMatch(4,4,4));
         System.out.println("");
 
-//// Best Fit
-//        System.out.println("Find Best fit 2 3 6 is " + findBestFit(2,3,6));
-//        System.out.println("Find Best fit 4 3 6 is " + findBestFit(4,3,6));
-//        System.out.println("Find Best fit 3 4 6 is " + findBestFit(3,4,6));
-//        System.out.println("Find Best fit 2 3 1 is " + findBestFit(2,3,1));
-//        System.out.println("Find Best fit 6 3 4 is " + findBestFit(6,3,4));
-//        System.out.println("Find Best fit 3 6 4 is " + findBestFit(3,6,4));
+// Best Fit
+        System.out.println("Best Fit");
+        System.out.println("Find Best fit 2 3 6 is " + findBestFit(2,3,6));
+        System.out.println("Find Best fit 4 3 6 is " + findBestFit(4,3,6));
+        System.out.println("Find Best fit 3 4 6 is " + findBestFit(3,4,6));
+        System.out.println("Find Best fit 2 3 1 is " + findBestFit(2,3,1));
+        System.out.println("Find Best fit 6 3 4 is " + findBestFit(6,3,4));
+        System.out.println("Find Best fit 3 6 4 is " + findBestFit(3,6,4));
+        System.out.println("");
 
 
     }
