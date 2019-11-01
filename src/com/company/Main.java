@@ -1,12 +1,16 @@
 package com.company;
 import java.awt.Color;
 
+//Jesse Wang
+//AP Computer Science 3B
+//Conditionals
+
 public class Main {
 
     public static double totalWages(double hrs, double rate) {
         double wages;
         if (hrs>40)
-        { wages=1.5*rate*(hrs-40) + (1.5*rate*40); }
+        { wages=1.5*rate*(hrs-40) + (rate*40); }
         else
         { wages=hrs*rate; }
         return wages;
@@ -58,9 +62,9 @@ public class Main {
         int x;
         if (size1+size2<=space)
         {x = 3;}
-        else if (size1>size2 && size1<space || size2>space && size1<space || size1==size2 )
+        else if ((size1>size2 || size2>space || size1==size2) && size1<space)
         {x = 1;}
-        else if (size2>size1 && size2<space || size2<space && size1>space)
+        else if ((size2>size1  || size1>space) && size2<space)
         {x = 2;}
         else
         {x = 0;}
@@ -120,3 +124,41 @@ public class Main {
 
     }
 }
+/*
+    Total Wages:
+        Wages for 45 hours at $12.50 593.75
+        Wages for 30 hours at $10.00 300.0
+
+        Leap year:
+        2000 true
+        2004 true
+        2003 false
+        2100 false
+
+        Is Later:
+        1/2/2010 is later than 1/2/2011 false
+        1/2/2011 is later than 1/2/2010 true
+        1/2/2010 is later than 3/2/2010 false
+        3/2/2010 is later than 1/2/2010 true
+        1/3/2010 is later than 1/2/2010 true
+        1/2/2010 is later than 1/3/2011 false
+        1/2/2010 is later than 1/2/2010 false
+        Specific Multivariable test: 9/2/2010 is later than 10/1/2010 false
+
+        Best Match:
+        Best match 2 3 4 java.awt.Color[r=0,g=0,b=255]
+        Best match 4 3 3 java.awt.Color[r=255,g=0,b=0]
+        Best match 3 8 4 java.awt.Color[r=0,g=255,b=0]
+        Best match 4 3 4 java.awt.Color[r=255,g=0,b=255]
+        Best match 2 4 4 java.awt.Color[r=0,g=255,b=255]
+        Best match 8 8 4 java.awt.Color[r=255,g=255,b=0]
+        Best match 4 4 4 java.awt.Color[r=128,g=128,b=128]
+
+        Best Fit
+        Find Best fit 2 3 6 is 3
+        Find Best fit 4 3 6 is 1
+        Find Best fit 3 4 6 is 2
+        Find Best fit 2 3 1 is 0
+        Find Best fit 6 3 4 is 2
+        Find Best fit 3 6 4 is 1
+*/
